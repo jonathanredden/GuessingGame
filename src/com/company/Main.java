@@ -16,8 +16,7 @@ public class Main {
         int higher = 100;
         int lower = 0;
         int random = (int) (Math.random() * 50 + 1);
-        int attempts = 0;
-        int attemptLimit = 5;
+        int attempts = 5;
 
         System.out.println("Guess a number between 0 and 100: ");
 
@@ -31,10 +30,10 @@ public class Main {
                 System.out.println("Guessed too high!");
             } else if (userGuess < random) {
                 System.out.println("Guessed too low!");
-            } else if (userGuess == random); {
-                System.out.println("you won!");
-            }
-        } while (attempts == 0);
+            } for (userGuess > random) {
+                attempts--;
+            } while (attempts > 0);
+        } while (userGuess != random);
 
 
 
